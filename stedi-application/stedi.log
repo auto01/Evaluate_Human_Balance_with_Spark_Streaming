@@ -1,0 +1,1520 @@
+****** Config File Path: /home/workspace/stedi-application/application.conf
+****** Config File Path: /home/workspace/stedi-application/application.conf
+Feb 04, 2022 2:12:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor onReceive
+INFO: Connecting to Kafka Topic: customer-risk
+****** Config File Path: /home/workspace/stedi-application/application.conf
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-STEDI-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = STEDI
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+Unable to create test user due to exception: Username already exists
+Unable to create customer due to exception: Customer already exists
+[Thread-1] INFO org.eclipse.jetty.util.log - Logging initialized @6343ms
+[Thread-1] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
+[Thread-1] INFO spark.webserver.JettySparkServer - >> Listening on 0.0.0.0:3000
+[Thread-1] INFO org.eclipse.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1643983923922
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Subscribed to topic(s): topic-you-created
+[Thread-1] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@744b71c3{/,null,AVAILABLE}
+[Thread-1] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@4c61c07e{HTTP/1.1,[http/1.1]}{0.0.0.0:3000}
+[Thread-1] INFO org.eclipse.jetty.server.Server - Started @7668ms
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 3 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Cluster ID: xM0sg7sESMKuFj2jv5gmQA
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 7 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 8 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 10 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 12 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 14 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 16 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 18 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 20 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 22 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] WARN org.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Error while fetching metadata with correlation id 24 : {topic-you-created=LEADER_NOT_AVAILABLE}
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Discovered group coordinator 72c9b6e226f4:9092 (id: 2147483647 rack: null)
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] (Re-)joining group
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Finished assignment for group at generation 1: {consumer-STEDI-1-9fe1a179-7223-4d6f-94a5-05d98ec1d1c4=Assignment(partitions=[topic-you-created-0])}
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Successfully joined group with generation 1
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Notifying assignor about the new Assignment(partitions=[topic-you-created-0])
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Adding newly assigned partitions: topic-you-created-0
+[websocket-akka.actor.default-dispatcher-4] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Found no committed offset for partition topic-you-created-0
+[kafka-coordinator-heartbeat-thread | STEDI] INFO org.apache.kafka.clients.consumer.internals.SubscriptionState - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Resetting offset for partition topic-you-created-0 to offset 0.
+Feb 04, 2022 2:15:03 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: SimulationActor received StartSimulationMessage to start simulation for: 30 test customers
+Feb 04, 2022 2:15:03 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Creating test customers...
+Customer already exists
+Feb 04, 2022 2:15:03 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Starting infinite loop for test data
+Feb 04, 2022 2:15:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Anandh@test.com
+Customer Santosh.Anandh@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Frank.Hansen@test.com
+Customer Frank.Hansen@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Harris@test.com
+Customer Larry.Harris@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Customer Edward.Jones@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Gonzalez@test.com
+Customer Dan.Gonzalez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Staples@test.com
+Customer Jerry.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Customer Craig.Khatib@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Davis@test.com
+Customer Jason.Davis@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Olson@test.com
+Customer Larry.Olson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Staples@test.com
+Customer Senthil.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Habschied@test.com
+Customer Edward.Habschied@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Aristotle@test.com
+Customer Larry.Aristotle@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Howard@test.com
+Customer John.Howard@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Smith@test.com
+Customer Neeraj.Smith@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Khatib@test.com
+Customer Travis.Khatib@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Mitra@test.com
+Customer Jane.Mitra@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Jones@test.com
+Customer John.Jones@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Spencer@test.com
+Customer Jane.Spencer@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Chris.Staples@test.com
+Customer Chris.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Clayton@test.com
+Customer Jerry.Clayton@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Anandh@test.com
+Customer Suresh.Anandh@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Staples@test.com
+Customer Ashley.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Harris@test.com
+Customer John.Harris@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Olson@test.com
+Customer Christina.Olson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Olson@test.com
+Customer Dan.Olson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Clark@test.com
+Customer Spencer.Clark@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:15:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Doshi@test.com
+Customer Neeraj.Doshi@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Staples@test.com
+Customer Larry.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:00 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Received request to stop simulation, stopping until further notice...
+Feb 04, 2022 2:16:00 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: SimulationActor received StartSimulationMessage to start simulation for: 30 test customers
+Feb 04, 2022 2:16:00 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Creating test customers...
+Customer already exists
+Feb 04, 2022 2:16:00 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Starting infinite loop for test data
+Feb 04, 2022 2:16:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Bobby.Habschied@test.com
+Customer Bobby.Habschied@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Jackson@test.com
+Customer Dan.Jackson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Olson@test.com
+Customer John.Olson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Frank.Clark@test.com
+Customer Frank.Clark@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Customer David.Khatib@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Anandh@test.com
+Customer Edward.Anandh@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Khatib@test.com
+Customer Ashley.Khatib@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Gail.Jones@test.com
+Customer Gail.Jones@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Frank.Huey@test.com
+Customer Frank.Huey@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Abram@test.com
+Customer David.Abram@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Customer Jane.Anderson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Howard@test.com
+Customer Jacob.Howard@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Gonzalez@test.com
+Customer Suresh.Gonzalez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Customer Dan.Davis@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Gail.Clayton@test.com
+Customer Gail.Clayton@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Smith@test.com
+Customer Ashley.Smith@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Chris.Gonzalez@test.com
+Customer Chris.Gonzalez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Chris.Harris@test.com
+Customer Chris.Harris@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Sanchez@test.com
+Customer Neeraj.Sanchez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Frank.Doshi@test.com
+Customer Frank.Doshi@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Ahmed@test.com
+Customer Neeraj.Ahmed@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Staples@test.com
+Customer Neeraj.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Sean.Clayton@test.com
+Customer Sean.Clayton@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Jones@test.com
+Customer Christina.Jones@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Phillips@test.com
+Customer Danny.Phillips@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Jones@test.com
+Customer Eric.Jones@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Gail.Harris@test.com
+Customer Gail.Harris@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Staples@test.com
+Customer Spencer.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:16:57 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Received request to stop simulation, stopping until further notice...
+Feb 04, 2022 2:17:49 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: SimulationActor received StartSimulationMessage to start simulation for: 30 test customers
+Feb 04, 2022 2:17:49 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Creating test customers...
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Feb 04, 2022 2:17:49 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Starting infinite loop for test data
+Feb 04, 2022 2:17:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Customer Edward.Staples@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:17:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Customer Jerry.Fibonnaci@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:17:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Customer Spencer.Ahmed@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:17:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Customer Jacob.Jackson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:17:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Customer Neeraj.Aristotle@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Customer Jane.Wu@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Customer Jason.Harris@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Customer Angie.Jackson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Customer Suresh.Jackson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Customer Ashley.Wu@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Customer Eric.Sanchez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Customer Larry.Davis@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Customer Jason.Huey@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Customer Eric.Mitra@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Customer Travis.Smith@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Customer Santosh.Howard@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Customer Larry.Clayton@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Customer Lyn.Sanchez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Customer Angie.Doshi@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Customer Jacob.Doshi@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Customer Travis.Fibonnaci@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Customer Senthil.Olson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Customer Spencer.Phillips@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Customer John.Aristotle@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:38 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:18:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Customer Edward.Staples@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Customer Jerry.Fibonnaci@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Customer Spencer.Ahmed@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Customer Jacob.Jackson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Customer Neeraj.Aristotle@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Customer Jane.Wu@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Customer Jason.Harris@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Customer Angie.Jackson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Customer Suresh.Jackson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:18:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Customer Ashley.Wu@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Customer Eric.Sanchez@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Customer Larry.Davis@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Customer Jason.Huey@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Customer Eric.Mitra@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Customer Travis.Smith@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Customer Santosh.Howard@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Customer Larry.Clayton@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Customer Lyn.Sanchez@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Customer Angie.Doshi@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Customer Jacob.Doshi@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Customer Travis.Fibonnaci@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Customer Senthil.Olson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Customer Spencer.Phillips@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Customer John.Aristotle@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:26 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:19:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Customer Edward.Staples@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Customer Jerry.Fibonnaci@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Customer Spencer.Ahmed@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Customer Jacob.Jackson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Customer Neeraj.Aristotle@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Customer Jane.Wu@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Customer Jason.Harris@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Customer Angie.Jackson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Customer Suresh.Jackson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Customer Ashley.Wu@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Customer Eric.Sanchez@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Customer Larry.Davis@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Customer Jason.Huey@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Customer Eric.Mitra@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Customer Travis.Smith@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:19:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Customer Santosh.Howard@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Customer Larry.Clayton@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Customer Lyn.Sanchez@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Customer Angie.Doshi@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Customer Jacob.Doshi@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Customer Travis.Fibonnaci@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Customer Senthil.Olson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Customer Spencer.Phillips@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Customer John.Aristotle@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 2:20:14 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:20:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Feb 04, 2022 2:20:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Staples@test.com {"customer":"Edward.Staples@test.com","score":17.5,"riskDate":"2022-02-04T14:20:14.610Z"}
+Feb 04, 2022 2:20:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Creating Kafka Producer
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = STEDI
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1643984416717
+Feb 04, 2022 2:20:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+[kafka-producer-network-thread | STEDI] INFO org.apache.kafka.clients.Metadata - [Producer clientId=STEDI] Cluster ID: xM0sg7sESMKuFj2jv5gmQA
+Feb 04, 2022 2:20:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Feb 04, 2022 2:20:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jerry.Fibonnaci@test.com {"customer":"Jerry.Fibonnaci@test.com","score":7.5,"riskDate":"2022-02-04T14:20:16.623Z"}
+Feb 04, 2022 2:20:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Feb 04, 2022 2:20:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Ahmed@test.com {"customer":"Spencer.Ahmed@test.com","score":22.0,"riskDate":"2022-02-04T14:20:18.646Z"}
+Feb 04, 2022 2:20:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Feb 04, 2022 2:20:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Jackson@test.com {"customer":"Jacob.Jackson@test.com","score":-4.0,"riskDate":"2022-02-04T14:20:20.672Z"}
+Feb 04, 2022 2:20:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Feb 04, 2022 2:20:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Neeraj.Aristotle@test.com {"customer":"Neeraj.Aristotle@test.com","score":-4.0,"riskDate":"2022-02-04T14:20:22.680Z"}
+Feb 04, 2022 2:20:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Feb 04, 2022 2:20:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Wu@test.com {"customer":"Jane.Wu@test.com","score":-2.5,"riskDate":"2022-02-04T14:20:24.740Z"}
+Feb 04, 2022 2:20:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+*** Error Creating Customer: Customer already exists
+Feb 04, 2022 2:20:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Feb 04, 2022 2:20:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Harris@test.com {"customer":"Jason.Harris@test.com","score":-3.0,"riskDate":"2022-02-04T14:20:26.761Z"}
+Feb 04, 2022 2:20:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Feb 04, 2022 2:20:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Jackson@test.com {"customer":"Angie.Jackson@test.com","score":-4.5,"riskDate":"2022-02-04T14:20:28.773Z"}
+Feb 04, 2022 2:20:30 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Feb 04, 2022 2:20:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Jackson@test.com {"customer":"Suresh.Jackson@test.com","score":-2.0,"riskDate":"2022-02-04T14:20:30.783Z"}
+Feb 04, 2022 2:20:32 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Feb 04, 2022 2:20:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ashley.Wu@test.com {"customer":"Ashley.Wu@test.com","score":-2.5,"riskDate":"2022-02-04T14:20:32.797Z"}
+Feb 04, 2022 2:20:34 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Feb 04, 2022 2:20:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Sanchez@test.com {"customer":"Eric.Sanchez@test.com","score":-2.5,"riskDate":"2022-02-04T14:20:34.808Z"}
+Feb 04, 2022 2:20:36 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 2:20:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-2.0,"riskDate":"2022-02-04T14:20:36.840Z"}
+Feb 04, 2022 2:20:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Feb 04, 2022 2:20:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Huey@test.com {"customer":"Jason.Huey@test.com","score":-6.0,"riskDate":"2022-02-04T14:20:38.867Z"}
+Feb 04, 2022 2:20:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Feb 04, 2022 2:20:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Mitra@test.com {"customer":"Eric.Mitra@test.com","score":14.5,"riskDate":"2022-02-04T14:20:40.915Z"}
+Feb 04, 2022 2:20:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Feb 04, 2022 2:20:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Smith@test.com {"customer":"Travis.Smith@test.com","score":17.0,"riskDate":"2022-02-04T14:20:42.934Z"}
+Feb 04, 2022 2:20:44 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Feb 04, 2022 2:20:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Santosh.Howard@test.com {"customer":"Santosh.Howard@test.com","score":-8.0,"riskDate":"2022-02-04T14:20:44.940Z"}
+Feb 04, 2022 2:20:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Feb 04, 2022 2:20:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Clayton@test.com {"customer":"Larry.Clayton@test.com","score":-0.5,"riskDate":"2022-02-04T14:20:46.958Z"}
+Feb 04, 2022 2:20:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Feb 04, 2022 2:20:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Sanchez@test.com {"customer":"Lyn.Sanchez@test.com","score":-5.5,"riskDate":"2022-02-04T14:20:48.984Z"}
+Feb 04, 2022 2:20:51 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: pk@gmail.com
+Feb 04, 2022 2:20:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: pk@gmail.com {"customer":"pk@gmail.com","score":8.49,"riskDate":"2022-02-04T14:20:33.925Z"}
+Feb 04, 2022 2:20:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Feb 04, 2022 2:20:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Doshi@test.com {"customer":"Angie.Doshi@test.com","score":22.0,"riskDate":"2022-02-04T14:20:51.000Z"}
+Feb 04, 2022 2:20:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Feb 04, 2022 2:20:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Doshi@test.com {"customer":"Jacob.Doshi@test.com","score":-0.5,"riskDate":"2022-02-04T14:20:53.030Z"}
+Feb 04, 2022 2:20:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Feb 04, 2022 2:20:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Fibonnaci@test.com {"customer":"Travis.Fibonnaci@test.com","score":-20.0,"riskDate":"2022-02-04T14:20:55.048Z"}
+Feb 04, 2022 2:20:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:20:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Feb 04, 2022 2:20:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Senthil.Olson@test.com {"customer":"Senthil.Olson@test.com","score":-15.5,"riskDate":"2022-02-04T14:20:57.070Z"}
+Feb 04, 2022 2:20:59 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Feb 04, 2022 2:21:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Phillips@test.com {"customer":"Spencer.Phillips@test.com","score":24.5,"riskDate":"2022-02-04T14:20:59.080Z"}
+Feb 04, 2022 2:21:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Feb 04, 2022 2:21:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: John.Aristotle@test.com {"customer":"John.Aristotle@test.com","score":29.5,"riskDate":"2022-02-04T14:21:01.094Z"}
+Feb 04, 2022 2:21:03 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:03 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:21:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Feb 04, 2022 2:21:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Staples@test.com {"customer":"Edward.Staples@test.com","score":-8.0,"riskDate":"2022-02-04T14:21:03.104Z"}
+Feb 04, 2022 2:21:05 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Feb 04, 2022 2:21:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jerry.Fibonnaci@test.com {"customer":"Jerry.Fibonnaci@test.com","score":7.5,"riskDate":"2022-02-04T14:21:05.115Z"}
+Feb 04, 2022 2:21:07 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Feb 04, 2022 2:21:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Ahmed@test.com {"customer":"Spencer.Ahmed@test.com","score":5.0,"riskDate":"2022-02-04T14:21:07.144Z"}
+Feb 04, 2022 2:21:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Feb 04, 2022 2:21:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Jackson@test.com {"customer":"Jacob.Jackson@test.com","score":-4.0,"riskDate":"2022-02-04T14:21:09.164Z"}
+Feb 04, 2022 2:21:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Feb 04, 2022 2:21:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Neeraj.Aristotle@test.com {"customer":"Neeraj.Aristotle@test.com","score":-2.0,"riskDate":"2022-02-04T14:21:11.186Z"}
+Feb 04, 2022 2:21:13 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Feb 04, 2022 2:21:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Wu@test.com {"customer":"Jane.Wu@test.com","score":-3.5,"riskDate":"2022-02-04T14:21:13.214Z"}
+Feb 04, 2022 2:21:15 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Feb 04, 2022 2:21:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Harris@test.com {"customer":"Jason.Harris@test.com","score":-4.5,"riskDate":"2022-02-04T14:21:15.227Z"}
+Feb 04, 2022 2:21:17 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Feb 04, 2022 2:21:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Jackson@test.com {"customer":"Angie.Jackson@test.com","score":-4.5,"riskDate":"2022-02-04T14:21:17.244Z"}
+Feb 04, 2022 2:21:19 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Feb 04, 2022 2:21:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Jackson@test.com {"customer":"Suresh.Jackson@test.com","score":-3.0,"riskDate":"2022-02-04T14:21:19.251Z"}
+Feb 04, 2022 2:21:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Feb 04, 2022 2:21:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ashley.Wu@test.com {"customer":"Ashley.Wu@test.com","score":-2.0,"riskDate":"2022-02-04T14:21:21.276Z"}
+Feb 04, 2022 2:21:23 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Feb 04, 2022 2:21:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Sanchez@test.com {"customer":"Eric.Sanchez@test.com","score":-2.5,"riskDate":"2022-02-04T14:21:23.286Z"}
+Feb 04, 2022 2:21:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 2:21:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-2.0,"riskDate":"2022-02-04T14:21:25.306Z"}
+Feb 04, 2022 2:21:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Feb 04, 2022 2:21:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Huey@test.com {"customer":"Jason.Huey@test.com","score":-25.5,"riskDate":"2022-02-04T14:21:27.338Z"}
+Feb 04, 2022 2:21:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Feb 04, 2022 2:21:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Mitra@test.com {"customer":"Eric.Mitra@test.com","score":16.5,"riskDate":"2022-02-04T14:21:29.362Z"}
+Feb 04, 2022 2:21:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Feb 04, 2022 2:21:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Smith@test.com {"customer":"Travis.Smith@test.com","score":-10.0,"riskDate":"2022-02-04T14:21:31.380Z"}
+Feb 04, 2022 2:21:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Feb 04, 2022 2:21:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Santosh.Howard@test.com {"customer":"Santosh.Howard@test.com","score":-29.5,"riskDate":"2022-02-04T14:21:33.393Z"}
+Feb 04, 2022 2:21:35 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Feb 04, 2022 2:21:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Clayton@test.com {"customer":"Larry.Clayton@test.com","score":12.5,"riskDate":"2022-02-04T14:21:35.415Z"}
+Feb 04, 2022 2:21:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Feb 04, 2022 2:21:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Sanchez@test.com {"customer":"Lyn.Sanchez@test.com","score":15.5,"riskDate":"2022-02-04T14:21:37.454Z"}
+Feb 04, 2022 2:21:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Feb 04, 2022 2:21:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Doshi@test.com {"customer":"Angie.Doshi@test.com","score":-9.0,"riskDate":"2022-02-04T14:21:39.470Z"}
+Feb 04, 2022 2:21:41 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Feb 04, 2022 2:21:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Doshi@test.com {"customer":"Jacob.Doshi@test.com","score":28.0,"riskDate":"2022-02-04T14:21:41.482Z"}
+Feb 04, 2022 2:21:43 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Feb 04, 2022 2:21:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Fibonnaci@test.com {"customer":"Travis.Fibonnaci@test.com","score":-14.0,"riskDate":"2022-02-04T14:21:43.538Z"}
+Feb 04, 2022 2:21:45 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Feb 04, 2022 2:21:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Senthil.Olson@test.com {"customer":"Senthil.Olson@test.com","score":-10.0,"riskDate":"2022-02-04T14:21:45.546Z"}
+Feb 04, 2022 2:21:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Feb 04, 2022 2:21:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Phillips@test.com {"customer":"Spencer.Phillips@test.com","score":-17.5,"riskDate":"2022-02-04T14:21:47.571Z"}
+Feb 04, 2022 2:21:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Feb 04, 2022 2:21:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: John.Aristotle@test.com {"customer":"John.Aristotle@test.com","score":6.5,"riskDate":"2022-02-04T14:21:49.608Z"}
+Feb 04, 2022 2:21:51 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:51 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:21:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Feb 04, 2022 2:21:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Staples@test.com {"customer":"Edward.Staples@test.com","score":9.0,"riskDate":"2022-02-04T14:21:51.636Z"}
+Feb 04, 2022 2:21:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Feb 04, 2022 2:21:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jerry.Fibonnaci@test.com {"customer":"Jerry.Fibonnaci@test.com","score":-24.0,"riskDate":"2022-02-04T14:21:53.650Z"}
+Feb 04, 2022 2:21:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Feb 04, 2022 2:21:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Ahmed@test.com {"customer":"Spencer.Ahmed@test.com","score":20.0,"riskDate":"2022-02-04T14:21:55.665Z"}
+Feb 04, 2022 2:21:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:21:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Feb 04, 2022 2:21:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Jackson@test.com {"customer":"Jacob.Jackson@test.com","score":-3.0,"riskDate":"2022-02-04T14:21:57.688Z"}
+Feb 04, 2022 2:21:59 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Feb 04, 2022 2:22:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Neeraj.Aristotle@test.com {"customer":"Neeraj.Aristotle@test.com","score":-2.0,"riskDate":"2022-02-04T14:21:59.710Z"}
+Feb 04, 2022 2:22:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Feb 04, 2022 2:22:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Wu@test.com {"customer":"Jane.Wu@test.com","score":-1.5,"riskDate":"2022-02-04T14:22:01.731Z"}
+Feb 04, 2022 2:22:03 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Feb 04, 2022 2:22:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Harris@test.com {"customer":"Jason.Harris@test.com","score":-4.0,"riskDate":"2022-02-04T14:22:03.746Z"}
+Feb 04, 2022 2:22:05 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Feb 04, 2022 2:22:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Jackson@test.com {"customer":"Angie.Jackson@test.com","score":-3.0,"riskDate":"2022-02-04T14:22:05.777Z"}
+Feb 04, 2022 2:22:07 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Feb 04, 2022 2:22:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Jackson@test.com {"customer":"Suresh.Jackson@test.com","score":-3.5,"riskDate":"2022-02-04T14:22:07.788Z"}
+Feb 04, 2022 2:22:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Feb 04, 2022 2:22:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ashley.Wu@test.com {"customer":"Ashley.Wu@test.com","score":-2.5,"riskDate":"2022-02-04T14:22:09.804Z"}
+Feb 04, 2022 2:22:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Feb 04, 2022 2:22:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Sanchez@test.com {"customer":"Eric.Sanchez@test.com","score":-2.5,"riskDate":"2022-02-04T14:22:11.813Z"}
+Feb 04, 2022 2:22:13 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 2:22:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-3.0,"riskDate":"2022-02-04T14:22:13.841Z"}
+Feb 04, 2022 2:22:15 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Feb 04, 2022 2:22:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Huey@test.com {"customer":"Jason.Huey@test.com","score":-26.5,"riskDate":"2022-02-04T14:22:15.881Z"}
+Feb 04, 2022 2:22:17 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Feb 04, 2022 2:22:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Mitra@test.com {"customer":"Eric.Mitra@test.com","score":-8.5,"riskDate":"2022-02-04T14:22:17.891Z"}
+Feb 04, 2022 2:22:19 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Feb 04, 2022 2:22:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Smith@test.com {"customer":"Travis.Smith@test.com","score":-20.5,"riskDate":"2022-02-04T14:22:19.903Z"}
+Feb 04, 2022 2:22:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Feb 04, 2022 2:22:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Santosh.Howard@test.com {"customer":"Santosh.Howard@test.com","score":-0.5,"riskDate":"2022-02-04T14:22:21.912Z"}
+Feb 04, 2022 2:22:23 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Feb 04, 2022 2:22:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Clayton@test.com {"customer":"Larry.Clayton@test.com","score":0.5,"riskDate":"2022-02-04T14:22:23.935Z"}
+Feb 04, 2022 2:22:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Feb 04, 2022 2:22:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Sanchez@test.com {"customer":"Lyn.Sanchez@test.com","score":0.0,"riskDate":"2022-02-04T14:22:25.960Z"}
+Feb 04, 2022 2:22:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Feb 04, 2022 2:22:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Doshi@test.com {"customer":"Angie.Doshi@test.com","score":-4.0,"riskDate":"2022-02-04T14:22:27.979Z"}
+Feb 04, 2022 2:22:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Feb 04, 2022 2:22:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Doshi@test.com {"customer":"Jacob.Doshi@test.com","score":7.0,"riskDate":"2022-02-04T14:22:29.987Z"}
+Feb 04, 2022 2:22:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Feb 04, 2022 2:22:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Fibonnaci@test.com {"customer":"Travis.Fibonnaci@test.com","score":13.0,"riskDate":"2022-02-04T14:22:31.998Z"}
+Feb 04, 2022 2:22:34 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Feb 04, 2022 2:22:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Senthil.Olson@test.com {"customer":"Senthil.Olson@test.com","score":26.5,"riskDate":"2022-02-04T14:22:34.005Z"}
+Feb 04, 2022 2:22:36 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Feb 04, 2022 2:22:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Phillips@test.com {"customer":"Spencer.Phillips@test.com","score":-15.0,"riskDate":"2022-02-04T14:22:36.030Z"}
+Feb 04, 2022 2:22:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Feb 04, 2022 2:22:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: John.Aristotle@test.com {"customer":"John.Aristotle@test.com","score":0.0,"riskDate":"2022-02-04T14:22:38.039Z"}
+Feb 04, 2022 2:22:40 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:22:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Feb 04, 2022 2:22:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Staples@test.com {"customer":"Edward.Staples@test.com","score":8.5,"riskDate":"2022-02-04T14:22:40.046Z"}
+Feb 04, 2022 2:22:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Feb 04, 2022 2:22:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jerry.Fibonnaci@test.com {"customer":"Jerry.Fibonnaci@test.com","score":-18.0,"riskDate":"2022-02-04T14:22:42.055Z"}
+Feb 04, 2022 2:22:44 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Feb 04, 2022 2:22:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Ahmed@test.com {"customer":"Spencer.Ahmed@test.com","score":24.0,"riskDate":"2022-02-04T14:22:44.062Z"}
+Feb 04, 2022 2:22:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Feb 04, 2022 2:22:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Jackson@test.com {"customer":"Jacob.Jackson@test.com","score":-2.5,"riskDate":"2022-02-04T14:22:46.095Z"}
+Feb 04, 2022 2:22:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Feb 04, 2022 2:22:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Neeraj.Aristotle@test.com {"customer":"Neeraj.Aristotle@test.com","score":-4.0,"riskDate":"2022-02-04T14:22:48.104Z"}
+Feb 04, 2022 2:22:50 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Feb 04, 2022 2:22:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Wu@test.com {"customer":"Jane.Wu@test.com","score":0.0,"riskDate":"2022-02-04T14:22:50.128Z"}
+Feb 04, 2022 2:22:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Feb 04, 2022 2:22:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Harris@test.com {"customer":"Jason.Harris@test.com","score":-3.5,"riskDate":"2022-02-04T14:22:52.139Z"}
+Feb 04, 2022 2:22:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Feb 04, 2022 2:22:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Jackson@test.com {"customer":"Angie.Jackson@test.com","score":-3.0,"riskDate":"2022-02-04T14:22:54.174Z"}
+Feb 04, 2022 2:22:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:22:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Feb 04, 2022 2:22:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Jackson@test.com {"customer":"Suresh.Jackson@test.com","score":-2.0,"riskDate":"2022-02-04T14:22:56.194Z"}
+Feb 04, 2022 2:22:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Feb 04, 2022 2:23:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ashley.Wu@test.com {"customer":"Ashley.Wu@test.com","score":-3.5,"riskDate":"2022-02-04T14:22:58.202Z"}
+Feb 04, 2022 2:23:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Feb 04, 2022 2:23:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Sanchez@test.com {"customer":"Eric.Sanchez@test.com","score":-2.0,"riskDate":"2022-02-04T14:23:00.229Z"}
+Feb 04, 2022 2:23:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 2:23:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-4.0,"riskDate":"2022-02-04T14:23:02.238Z"}
+Feb 04, 2022 2:23:04 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Feb 04, 2022 2:23:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Huey@test.com {"customer":"Jason.Huey@test.com","score":20.5,"riskDate":"2022-02-04T14:23:04.249Z"}
+Feb 04, 2022 2:23:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Feb 04, 2022 2:23:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Mitra@test.com {"customer":"Eric.Mitra@test.com","score":-13.0,"riskDate":"2022-02-04T14:23:06.270Z"}
+Feb 04, 2022 2:23:08 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Feb 04, 2022 2:23:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Smith@test.com {"customer":"Travis.Smith@test.com","score":-7.5,"riskDate":"2022-02-04T14:23:08.284Z"}
+Feb 04, 2022 2:23:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Feb 04, 2022 2:23:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Santosh.Howard@test.com {"customer":"Santosh.Howard@test.com","score":18.0,"riskDate":"2022-02-04T14:23:10.294Z"}
+Feb 04, 2022 2:23:12 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Feb 04, 2022 2:23:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Clayton@test.com {"customer":"Larry.Clayton@test.com","score":-30.0,"riskDate":"2022-02-04T14:23:12.310Z"}
+Feb 04, 2022 2:23:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Feb 04, 2022 2:23:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Sanchez@test.com {"customer":"Lyn.Sanchez@test.com","score":-19.0,"riskDate":"2022-02-04T14:23:14.320Z"}
+Feb 04, 2022 2:23:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Feb 04, 2022 2:23:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Doshi@test.com {"customer":"Angie.Doshi@test.com","score":-1.5,"riskDate":"2022-02-04T14:23:16.328Z"}
+Feb 04, 2022 2:23:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Feb 04, 2022 2:23:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Doshi@test.com {"customer":"Jacob.Doshi@test.com","score":-24.5,"riskDate":"2022-02-04T14:23:18.346Z"}
+Feb 04, 2022 2:23:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Feb 04, 2022 2:23:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Fibonnaci@test.com {"customer":"Travis.Fibonnaci@test.com","score":19.0,"riskDate":"2022-02-04T14:23:20.380Z"}
+Feb 04, 2022 2:23:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Feb 04, 2022 2:23:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Senthil.Olson@test.com {"customer":"Senthil.Olson@test.com","score":-4.0,"riskDate":"2022-02-04T14:23:22.386Z"}
+Feb 04, 2022 2:23:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Feb 04, 2022 2:23:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Phillips@test.com {"customer":"Spencer.Phillips@test.com","score":21.5,"riskDate":"2022-02-04T14:23:24.394Z"}
+Feb 04, 2022 2:23:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Feb 04, 2022 2:23:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: John.Aristotle@test.com {"customer":"John.Aristotle@test.com","score":-0.5,"riskDate":"2022-02-04T14:23:26.410Z"}
+Feb 04, 2022 2:23:28 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:23:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Feb 04, 2022 2:23:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Staples@test.com {"customer":"Edward.Staples@test.com","score":-7.5,"riskDate":"2022-02-04T14:23:28.428Z"}
+Feb 04, 2022 2:23:30 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Feb 04, 2022 2:23:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jerry.Fibonnaci@test.com {"customer":"Jerry.Fibonnaci@test.com","score":25.0,"riskDate":"2022-02-04T14:23:30.450Z"}
+Feb 04, 2022 2:23:32 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Feb 04, 2022 2:23:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Ahmed@test.com {"customer":"Spencer.Ahmed@test.com","score":5.0,"riskDate":"2022-02-04T14:23:32.460Z"}
+Feb 04, 2022 2:23:34 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Feb 04, 2022 2:23:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Jackson@test.com {"customer":"Jacob.Jackson@test.com","score":-2.5,"riskDate":"2022-02-04T14:23:34.467Z"}
+Feb 04, 2022 2:23:36 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Feb 04, 2022 2:23:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Neeraj.Aristotle@test.com {"customer":"Neeraj.Aristotle@test.com","score":-3.5,"riskDate":"2022-02-04T14:23:36.475Z"}
+Feb 04, 2022 2:23:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Feb 04, 2022 2:23:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Wu@test.com {"customer":"Jane.Wu@test.com","score":-1.5,"riskDate":"2022-02-04T14:23:38.483Z"}
+Feb 04, 2022 2:23:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Feb 04, 2022 2:23:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Harris@test.com {"customer":"Jason.Harris@test.com","score":-3.5,"riskDate":"2022-02-04T14:23:40.498Z"}
+Feb 04, 2022 2:23:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Feb 04, 2022 2:23:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Jackson@test.com {"customer":"Angie.Jackson@test.com","score":-4.5,"riskDate":"2022-02-04T14:23:42.506Z"}
+Feb 04, 2022 2:23:44 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Feb 04, 2022 2:23:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Jackson@test.com {"customer":"Suresh.Jackson@test.com","score":-1.5,"riskDate":"2022-02-04T14:23:44.514Z"}
+Feb 04, 2022 2:23:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Feb 04, 2022 2:23:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ashley.Wu@test.com {"customer":"Ashley.Wu@test.com","score":-4.5,"riskDate":"2022-02-04T14:23:46.523Z"}
+Feb 04, 2022 2:23:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Feb 04, 2022 2:23:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Sanchez@test.com {"customer":"Eric.Sanchez@test.com","score":-2.5,"riskDate":"2022-02-04T14:23:48.541Z"}
+Feb 04, 2022 2:23:50 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 2:23:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-3.5,"riskDate":"2022-02-04T14:23:50.560Z"}
+Feb 04, 2022 2:23:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Feb 04, 2022 2:23:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Huey@test.com {"customer":"Jason.Huey@test.com","score":39.5,"riskDate":"2022-02-04T14:23:52.575Z"}
+Feb 04, 2022 2:23:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Feb 04, 2022 2:23:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Mitra@test.com {"customer":"Eric.Mitra@test.com","score":7.5,"riskDate":"2022-02-04T14:23:54.588Z"}
+Feb 04, 2022 2:23:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:23:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Feb 04, 2022 2:23:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Smith@test.com {"customer":"Travis.Smith@test.com","score":23.0,"riskDate":"2022-02-04T14:23:56.597Z"}
+Feb 04, 2022 2:23:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Feb 04, 2022 2:24:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Santosh.Howard@test.com {"customer":"Santosh.Howard@test.com","score":6.5,"riskDate":"2022-02-04T14:23:10.294Z"}
+Feb 04, 2022 2:24:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Feb 04, 2022 2:24:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Clayton@test.com {"customer":"Larry.Clayton@test.com","score":-6.5,"riskDate":"2022-02-04T14:24:00.633Z"}
+Feb 04, 2022 2:24:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Feb 04, 2022 2:24:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Sanchez@test.com {"customer":"Lyn.Sanchez@test.com","score":-3.0,"riskDate":"2022-02-04T14:24:02.675Z"}
+Feb 04, 2022 2:24:04 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Feb 04, 2022 2:24:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Doshi@test.com {"customer":"Angie.Doshi@test.com","score":10.5,"riskDate":"2022-02-04T14:24:04.693Z"}
+Feb 04, 2022 2:24:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Feb 04, 2022 2:24:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Doshi@test.com {"customer":"Jacob.Doshi@test.com","score":-6.5,"riskDate":"2022-02-04T14:24:06.702Z"}
+Feb 04, 2022 2:24:08 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Feb 04, 2022 2:24:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Fibonnaci@test.com {"customer":"Travis.Fibonnaci@test.com","score":-5.5,"riskDate":"2022-02-04T14:24:08.718Z"}
+Feb 04, 2022 2:24:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Feb 04, 2022 2:24:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Senthil.Olson@test.com {"customer":"Senthil.Olson@test.com","score":-20.0,"riskDate":"2022-02-04T14:24:10.751Z"}
+Feb 04, 2022 2:24:12 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Feb 04, 2022 2:24:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Phillips@test.com {"customer":"Spencer.Phillips@test.com","score":22.0,"riskDate":"2022-02-04T14:24:12.765Z"}
+Feb 04, 2022 2:24:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Feb 04, 2022 2:24:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: John.Aristotle@test.com {"customer":"John.Aristotle@test.com","score":-11.5,"riskDate":"2022-02-04T14:24:14.779Z"}
+Feb 04, 2022 2:24:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:16 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 2:24:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Staples@test.com
+Feb 04, 2022 2:24:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Staples@test.com {"customer":"Edward.Staples@test.com","score":0.5,"riskDate":"2022-02-04T14:24:16.796Z"}
+Feb 04, 2022 2:24:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jerry.Fibonnaci@test.com
+Feb 04, 2022 2:24:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jerry.Fibonnaci@test.com {"customer":"Jerry.Fibonnaci@test.com","score":-2.0,"riskDate":"2022-02-04T14:24:18.849Z"}
+Feb 04, 2022 2:24:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Ahmed@test.com
+Feb 04, 2022 2:24:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Ahmed@test.com {"customer":"Spencer.Ahmed@test.com","score":-6.0,"riskDate":"2022-02-04T14:24:20.881Z"}
+Feb 04, 2022 2:24:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Jackson@test.com
+Feb 04, 2022 2:24:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Jackson@test.com {"customer":"Jacob.Jackson@test.com","score":-1.0,"riskDate":"2022-02-04T14:24:22.913Z"}
+Feb 04, 2022 2:24:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Neeraj.Aristotle@test.com
+Feb 04, 2022 2:24:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Neeraj.Aristotle@test.com {"customer":"Neeraj.Aristotle@test.com","score":-1.0,"riskDate":"2022-02-04T14:24:24.948Z"}
+Feb 04, 2022 2:24:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Wu@test.com
+Feb 04, 2022 2:24:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Wu@test.com {"customer":"Jane.Wu@test.com","score":-3.5,"riskDate":"2022-02-04T14:24:26.982Z"}
+Feb 04, 2022 2:24:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Harris@test.com
+Feb 04, 2022 2:24:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Harris@test.com {"customer":"Jason.Harris@test.com","score":-2.5,"riskDate":"2022-02-04T14:24:28.992Z"}
+Feb 04, 2022 2:24:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Jackson@test.com
+Feb 04, 2022 2:24:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Jackson@test.com {"customer":"Angie.Jackson@test.com","score":-5.0,"riskDate":"2022-02-04T14:24:31.028Z"}
+Feb 04, 2022 2:24:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Jackson@test.com
+Feb 04, 2022 2:24:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Jackson@test.com {"customer":"Suresh.Jackson@test.com","score":-3.0,"riskDate":"2022-02-04T14:24:33.065Z"}
+Feb 04, 2022 2:24:35 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ashley.Wu@test.com
+Feb 04, 2022 2:24:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ashley.Wu@test.com {"customer":"Ashley.Wu@test.com","score":-3.5,"riskDate":"2022-02-04T14:24:35.086Z"}
+Feb 04, 2022 2:24:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Sanchez@test.com
+Feb 04, 2022 2:24:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Sanchez@test.com {"customer":"Eric.Sanchez@test.com","score":-3.5,"riskDate":"2022-02-04T14:24:37.102Z"}
+Feb 04, 2022 2:24:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 2:24:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-3.5,"riskDate":"2022-02-04T14:24:39.137Z"}
+Feb 04, 2022 2:24:41 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jason.Huey@test.com
+Feb 04, 2022 2:24:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jason.Huey@test.com {"customer":"Jason.Huey@test.com","score":-7.0,"riskDate":"2022-02-04T14:24:41.145Z"}
+Feb 04, 2022 2:24:43 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Eric.Mitra@test.com
+Feb 04, 2022 2:24:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Eric.Mitra@test.com {"customer":"Eric.Mitra@test.com","score":18.5,"riskDate":"2022-02-04T14:24:43.164Z"}
+Feb 04, 2022 2:24:45 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Smith@test.com
+Feb 04, 2022 2:24:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Smith@test.com {"customer":"Travis.Smith@test.com","score":14.5,"riskDate":"2022-02-04T14:23:56.597Z"}
+Feb 04, 2022 2:24:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Santosh.Howard@test.com
+Feb 04, 2022 2:24:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Santosh.Howard@test.com {"customer":"Santosh.Howard@test.com","score":43.0,"riskDate":"2022-02-04T14:24:47.214Z"}
+Feb 04, 2022 2:24:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Clayton@test.com
+Feb 04, 2022 2:24:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Clayton@test.com {"customer":"Larry.Clayton@test.com","score":8.0,"riskDate":"2022-02-04T14:24:49.222Z"}
+Feb 04, 2022 2:24:51 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Sanchez@test.com
+Feb 04, 2022 2:24:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Sanchez@test.com {"customer":"Lyn.Sanchez@test.com","score":12.0,"riskDate":"2022-02-04T14:24:51.250Z"}
+Feb 04, 2022 2:24:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Angie.Doshi@test.com
+Feb 04, 2022 2:24:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Angie.Doshi@test.com {"customer":"Angie.Doshi@test.com","score":-4.5,"riskDate":"2022-02-04T14:24:53.259Z"}
+Feb 04, 2022 2:24:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jacob.Doshi@test.com
+Feb 04, 2022 2:24:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jacob.Doshi@test.com {"customer":"Jacob.Doshi@test.com","score":1.5,"riskDate":"2022-02-04T14:24:06.702Z"}
+Feb 04, 2022 2:24:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:24:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Fibonnaci@test.com
+Feb 04, 2022 2:24:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Fibonnaci@test.com {"customer":"Travis.Fibonnaci@test.com","score":-14.0,"riskDate":"2022-02-04T14:24:57.291Z"}
+Feb 04, 2022 2:24:59 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:25:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Senthil.Olson@test.com
+Feb 04, 2022 2:25:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Senthil.Olson@test.com {"customer":"Senthil.Olson@test.com","score":4.5,"riskDate":"2022-02-04T14:24:59.317Z"}
+Feb 04, 2022 2:25:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:25:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Spencer.Phillips@test.com
+Feb 04, 2022 2:25:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Spencer.Phillips@test.com {"customer":"Spencer.Phillips@test.com","score":-15.0,"riskDate":"2022-02-04T14:25:01.347Z"}
+Feb 04, 2022 2:25:03 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:25:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: John.Aristotle@test.com
+Feb 04, 2022 2:25:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: John.Aristotle@test.com {"customer":"John.Aristotle@test.com","score":-12.5,"riskDate":"2022-02-04T14:25:03.367Z"}
+Feb 04, 2022 2:25:05 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 2:25:05 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Received request to stop simulation, stopping until further notice...
